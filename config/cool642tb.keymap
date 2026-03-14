@@ -147,7 +147,7 @@
 &none            &mkp LCLK        &mkp RCLK         &none       &none        &none             &kp MINUS          &kp DEL                                                                   &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_move_y>;
         };
 
         NUM {
@@ -158,7 +158,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &kp UNDERSCORE  &none                     &bt BT_CLR_ALL                                                   &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_move_y>;
         };
 
         ARROW {
@@ -169,8 +169,8 @@
 &kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
+            sensor-bindings = <&scroll_move_y>;
+         };
 
         MOUSE {
             bindings = <
