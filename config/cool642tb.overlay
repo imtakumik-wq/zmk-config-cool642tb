@@ -1,0 +1,8 @@
+#include <input/processors.dtsi>
+
+&trackball_listener {
+    scroll_layer {
+        layers = <3>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
+};
