@@ -23,7 +23,6 @@
         scroll_layer {
             layers = <3>;
             input-processors = <&zip_xy_to_scroll_mapper>;
-            scroll-factor = <2>;
         };
     };
 };
