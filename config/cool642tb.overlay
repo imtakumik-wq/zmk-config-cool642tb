@@ -1,8 +1,31 @@
+#include "cool642tb.dtsi"
 #include <input/processors.dtsi>
 
-&trackball_listener {
-    scroll_layer {
-        layers = <3>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
+&default_transform {
+    col-offset = <6>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&xiao_d 10 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_scroll_scaler 1 2>;
+
+        scroll_layer {
+            layers = <3>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+            process-next;
+        };
     };
 };
