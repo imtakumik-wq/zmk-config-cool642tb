@@ -1,28 +1,19 @@
-#include "cool642tb.dtsi"
-#include <input/processors.dtsi>
+  / {
+        trackball_listener {
+            compatible = "zmk,input-listener";
+            device = <&trackball>;
 
-&default_transform {
-    col-offset = <6>;
-};
+            // レイヤー3の時：スクロールにする
+            scroll_layer {
+                layers = <3>;
+                input-processors = <&zip_xy_to_scroll_mapper>;
+            };
 
-&kscan0 {
-    col-gpios
-        = <&xiao_d 10 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
-        , <&gpio0 10 GPIO_ACTIVE_HIGH>
-        ;
-};
-
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-        scroll_layer {
-            layers = <3>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
+            // それ以外のレイヤー：マウス移動にする（明示的に指定）
+            mouse_layer {
+                layers = <0 1 2 4 5 6>;
+                input-processors = <&zip_xy_to_mouse_mapper>;
+            };
         };
     };
-};
+
