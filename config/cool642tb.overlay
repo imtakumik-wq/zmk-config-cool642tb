@@ -6,14 +6,14 @@
             // 【マウス移動にするレイヤー】
             // 1番目(0)、2番目(1)、3番目(2)、5番目(4)を指定
             mouse_movement {
-                layers = <0 1 2 4>;
+                layers = <0 1 2 3>;
                 input-processors = <&zip_xy_to_mouse_mapper>;
             };
 
             // 【スクロールにするレイヤー】
             // 4番目(3)だけをスクロールに指定
             scrolling {
-                layers = <3>;
+                layers = <4>;
                 input-processors = <&zip_xy_to_scroll_mapper>;
             };
         };
