@@ -103,14 +103,14 @@
             >;
         };
 
-        ARROW {
-            bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &mkp LCLK   &mkp RCLK
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
-            >;
-        }; 
+ARROW {
+    bindings = <
+&trans &trans &trans &trans &trans &trans     &trans &trans &trans &trans &mkp LCLK &mkp RCLK
+&trans &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans    &trans
+&trans &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans    &trans
+&trans &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans
+>;
+};
 
         MOUSE {
             bindings = <
