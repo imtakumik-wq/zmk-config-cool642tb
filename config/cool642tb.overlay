@@ -4,18 +4,19 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        input-processors = <&zip_temp_layer 4 2000>;
 
         mouse_movement {
             layers = <0 1 2 4>;
-            input-processors = <&zip_temp_layer 4 2000>
-                               <&zip_xy_scaler 1 2>
+            input-processors = <&zip_xy_scaler 1 2>
                                <&zip_xy_to_mouse_mapper>;
+            process-next;
         };
 
         scrolling {
             layers = <3>;
-            input-processors = <&zip_temp_layer 4 2000>
-                               <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+            process-next;
         };
     };
 };
