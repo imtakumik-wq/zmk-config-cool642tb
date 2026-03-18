@@ -19,14 +19,16 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        input-processors = <&zip_temp_layer 4 2000>;
 
         scroll_layer {
             layers = <3>;
             input-processors = <&zip_xy_to_scroll_mapper>;
         };
     };
+};
 
-};&pinctrl {
+&pinctrl {
     spi0_default: spi0_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
@@ -45,7 +47,9 @@
     };
 };
 
-&xiao_serial { status = "disabled"; };
+&xiao_serial {
+    status = "disabled";
+};
 
 &spi0 {
     status = "okay";
@@ -63,14 +67,3 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
-
-// #include <input/processors.dtsi>
-// / {
-//    trackball_listener: trackball_listener {
-//        compatible = "zmk,input-listener";
-//        device = <&trackball>;
-// トラボ使用後10秒間、レイヤー4が有効
-//        input-processors = <&zip_temp_layer 4 10000>;
-//    };
-// };
-
