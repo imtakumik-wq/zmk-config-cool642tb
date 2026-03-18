@@ -4,7 +4,7 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 2 500>;
+        input-processors = <&zip_temp_layer 1 200>;
 
         mouse_movement {
             layers = <0 1 2 4>;
