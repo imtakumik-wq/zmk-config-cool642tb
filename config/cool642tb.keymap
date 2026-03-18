@@ -34,14 +34,14 @@
             >;
         };
 
-        layer_3 {
-            bindings = <
-&trans      &trans      &trans            &trans        &trans                                                  &trans         &trans &trans     &mkp LCLK  &mkp RCLK
-&trans      &trans      &trans            &trans        &trans        &trans                &trans                &trans         &trans &trans     &trans      &trans
-&trans      &trans      &trans            &trans        &trans        &trans                &trans                &trans         &trans &trans     &trans      &trans
+layer_3 {
+    bindings = <
+&trans      &trans      &trans            &trans        &trans                                                  &trans         &trans &trans     &kp A      &kp B
+&trans      &trans      &trans            &trans        &trans        &trans                &trans                &trans         &trans &trans     &trans     &trans
+&trans      &trans      &trans            &trans        &trans        &trans                &trans                &trans         &trans &trans     &trans     &trans
 &trans      &trans      &trans            &trans        &trans        &trans                &trans                                                   &mo 4
             >;
-        };
+};
 
         layer_4 {
             bindings = <
