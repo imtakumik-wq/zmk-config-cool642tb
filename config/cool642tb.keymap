@@ -14,6 +14,7 @@
 &kp Z       &kp X       &kp C             &kp V         &kp B         &kp N0                &kp ESCAPE             &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp ESCAPE  &kp TAB     &kp LEFT_CONTROL  &mt LANG2 LANG1  &kp LEFT_ALT  &kp SPACE             &kp BACKSPACE                                            &mo 3
             >;
+　　　　　　　sensor-bindings = <&msc SCRL_DN SCRL_UP>;
         };
 
         layer_1 {
@@ -23,6 +24,7 @@
 &trans      &trans      &trans            &trans        &kp F2        &trans                &trans                &kp N0         &kp N1 &kp N2     &kp N3      &trans
 &trans      &trans      &trans            &trans        &trans        &trans                &trans                                                   &kp DEL
             >;
+　　　　　　　sensor-bindings = <&msc SCRL_DN SCRL_UP>;
         };
 
         layer_2 {
@@ -32,6 +34,7 @@
 &trans      &trans      &trans            &trans        &trans        &trans                &trans                &trans         &trans &trans     &trans      &trans
 &trans      &trans      &trans            &trans        &trans        &trans                &trans                                                   &mo 3
             >;
+　　　　　　　sensor-bindings = <&msc SCRL_DN SCRL_UP>;
         };
 
 layer_3 {
@@ -41,6 +44,7 @@ layer_3 {
 &trans      &trans      &trans            &trans        &trans        &trans                &trans                &trans         &trans &trans     &trans      &trans
 &trans      &trans      &trans            &trans        &trans        &trans                &trans                                                   &mo 4
             >;
+　　　　　　　sensor-bindings = <&msc SCRL_DN SCRL_UP>;
 };
 
         layer_4 {
@@ -50,6 +54,7 @@ layer_3 {
 &kp Z       &kp X       &kp C             &kp V         &kp B         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp MINUS      &kp EQUAL &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp SLASH
 &trans      &trans      &trans            &kp LEFT_GUI  &kp LEFT_ALT  &trans                &trans                                                   &kp LEFT_SHIFT
             >;
+　　　　　　　sensor-bindings = <&msc SCRL_DN SCRL_UP>;
         };
     };
 };
