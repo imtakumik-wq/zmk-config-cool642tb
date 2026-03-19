@@ -4,9 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-inc_dec_kp {
-    step = <4>;
-};
     keymap {
         compatible = "zmk,keymap";
 
