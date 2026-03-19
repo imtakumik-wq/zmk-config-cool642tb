@@ -12,7 +12,7 @@
 &kp Q       &kp W       &kp E             &kp R         &kp T                                                      &kp Y          &kp U  &kp I      &kp O       &kp P
 &kp A       &kp S       &kp D             &kp F         &kp G         &mo 1                 &mo 2                  &kp H          &kp J  &kp K      &kp L       &kp SEMI
 &kp Z       &kp X       &kp C             &kp V         &kp B         &kp N0                &kp ESCAPE             &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp ESCAPE  &kp TAB     &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE             &kp BACKSPACE                                            &mo 3
+&kp ESCAPE  &kp TAB     &kp LEFT_CONTROL  &mt LANG2 LANG1  &kp LEFT_ALT  &kp SPACE             &kp BACKSPACE                                            &mo 3
             >;
         };
 
