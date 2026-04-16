@@ -9,14 +9,12 @@
             layers = <0 1 2 4>;
             input-processors = <&zip_xy_scaler 1 2>
                                <&zip_xy_to_mouse_mapper>;
-            process-next;
         };
 
         scrolling {
             layers = <3>;
             input-processors = <&zip_xy_scaler 1 1>
                                <&zip_xy_to_scroll_mapper>;
-            process-next;
         };
     };
 };
